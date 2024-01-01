@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Set text color to white */
+    background: linear-gradient(to bottom right, #8e44ad, #e74c3c, #3498db, #8e44ad); /* Violet-Pink-Blue Gradient */
+    background-size: 200% 200%; /* Adjust the size based on the number of colors */
+    animation: gradientAnimation 15s infinite linear; /* 15s duration, infinite loop, linear easing */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(85, 85, 85, 0.7); /* Darker greyish black with 70% opacity */
+    backdrop-filter: blur(10px); /* Add background blur for the glass effect */
+    border-radius: 10px; /* Add border-radius for a rounded appearance */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for a shadow effect */
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+section:nth-child(even) {
+    background: rgba(68, 68, 68, 0.7); /* Slightly lighter with 70% opacity for even sections */
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.download-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    background: rgba(85, 85, 85, 0.7); /* Darker greyish black with 70% opacity for the footer */
+    backdrop-filter: blur(10px); /* Add background blur for the glass effect in the footer */
+    color: #fff;
+    text-align: center;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
