@@ -11,3 +11,13 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+}
