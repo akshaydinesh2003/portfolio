@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Dinesh - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="content">
+                <div class="text">
+                    <p style="margin: auto;">I'M</p>
+                    <h1 class="rgb-text" style="font-size: 70px;margin-top:5%;margin-bottom: 5%;">AKSHAY DINESH</h1>
+                    <p>WEB DEVELOPER</p>
+                </div>
+                <div class="photo">
+                    <img src="./home cropped.png" alt="Akshay Dinesh">
+                </div>
+            </div>
+            <div class="scroll-down" onclick="scrollDown()">
+                <span>&#x2193;</span>
+                <span>scroll down</span>
+            </div>
+        </section>
+        <section class="next-section" id="about">
+            <div class="about-me">
+                <img src="./cropped.png" alt="Profile Picture">
+                <div class="about-text">
+                    <h1 style="font-size: 50px; margin-left: 50px;">About me</h1>
+                    <p style="margin-left: 50px;">My name is Akshay Dinesh, and I am a dedicated web developer with a passion for learning and integrating new technologies. I bring a versatile skill set to every project. I pride myself on being efficient in my work, leveraging AI tools to enhance productivity and deliver high-quality results. Let's connect and create something amazing together!</p>
+                    <button class="download-cv" style="margin-left: 50px; margin-top: 25px;">DOWNLOAD CV</button>
+                </div>
+            </div>
+        </section>
+        <section class="next-section" id="experience">
+            <div class="experience">
+                <h1 style="font-size: 50px; margin-bottom: 20px;">Experience</h1><br>
+                <div class="experience-item">
+                    <h2>Intern - Information Systems Department, BPCL Kochi</h2><br>
+                    <p><strong>Project:</strong> Developed a web application using C# via the MVC model.</p><br>
+                    <p><strong>Duration:</strong> 2 weeks</p><br>
+                    <p><strong>Skills Acquired:</strong> Familiarity with C#, MSSQL, and the MVC web model.</p><br>
+                    <p><strong>Project Description:</strong> During my internship at BPCL Kochi, I successfully developed a comprehensive web application designed to streamline the internal processes within the Information Systems Department. The application was built using the MVC (Model-View-Controller) framework in C#, ensuring a robust and scalable architecture.
+                    The project not only enhanced my technical skills but also improved my ability to work effectively in a professional environment, manage time efficiently, and communicate technical concepts clearly to non-technical team members.</p>
+                </div>
+            </div>
+        </section>
+        <section class="next-section" id="projects">
+            <div class="projects">
+                <h1 style="font-size: 50px; margin-bottom: 20px;">Projects</h1><br>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <h2>Amazon Review Analysis</h2>
+                        <p>Built with Python, this project scrapes Amazon reviews, classifies them as good or bad using NLP, and displays a graph with the results.</p>
+                        <a href="link-to-amazon-review-analysis" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h2>Real Time Chat</h2>
+                        <p>This project allows users to chat in real-time using a shared room key. It supports multiple users in a single room, similar to Google Meet but for text.</p>
+                        <a href="link-to-real-time-chat" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h2>Movie Reservation System</h2>
+                        <p>A dual-part system where users can reserve movie tickets and admins can update the movie listings and manage reservations.</p>
+                        <a href="link-to-movie-reservation-system" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="next-section" id="contact">
+            <div class="contact">
+                <h1 style="font-size: 50px; margin-bottom: 20px;">Contact Me</h1>
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Akshay Dinesh. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</footer>
+
+</html>
