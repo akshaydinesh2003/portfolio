@@ -13,11 +13,27 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
 });
 
 
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const faders = document.querySelectorAll('.fade-in');
 
-.fade-in-visible {
-    opacity: 1;
-}
+    const appearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('fade-in-visible');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});
+
